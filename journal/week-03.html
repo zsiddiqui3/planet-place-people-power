@@ -32,7 +32,7 @@
     <!-- EDIT THIS: a title that says what you found, not what you did.
          "The blocks that were built after the creek was filled" beats
          "Week 1 journal entry". -->
-    <h1>The Terrain of Lyari Town, Karachi</h1>
+    <h1>Terrain</h1>
 
     <!-- ============================================================
          The six parts. Every entry in this course has all six.
@@ -42,28 +42,26 @@
 
     <h2>The question</h2>
     <p>
-      
+      How does the peak rainfall month compare to the rainfall
+      during the rest of the year in Karachi, Pakistan?
     </p>
 
     <h2>The data</h2>
     <p>
-      The layer used is Land Cover from 2026, made by Airbus, CNES/Airbus, 
-      Landsat/Copernicus, and Maxar Technologies. What's missing is a map 
-      of drainage and sewage systems as well as a neighborhood boundary. The
-      layer is standing in for a more detailed land cover map.
-    </p>
-    <p>
-      Write the proxy sentence here, once per indicator:
-      <em>I am using Land Cover to stand for Urban Drainage availability, 
-          and it might fail because the area could have good drainage regardless of 
-          green space.</em>
+      The layer used is World Historical Climate - Monthly Averages for 
+      GHCN-D Stations for 1981 - 2010 published by Esri from NOAA NCEI 
+      data (GHCN-Daily v3.24, Menne et al. 2012). It was opened on September 10th. 
+      The layer can be accessed at this link: https://nyuds.maps.arcgis.com/home/item.html?id=ed59d3b4a8c44100914458dd722f054f&sublayer=0#overview
+
     </p>
 
     <h2>The method</h2>
     <p>
-      I first searched for Karachi, looked at its form, then found the Lyari Town
-      reigon. I set the map to satelite, then the layer to land cover at .75 opacity
-      The image is a close view at the Greater Lyari Town Neighborhood.
+     The location used was Jinnah International Airport, Karachi's airport 
+     which is the closest and only station near Lyari Town. To filter this station
+     the expressions used were: GHCN-D ID starts with PK and GHCN-D ID is PKM00041780.
+     I charted the average monthly temperatures as well as the average monthly precipitation. 
+     These values were aggregated from 1981-2010. 
     </p>
 
     <!-- ============================================================
@@ -75,45 +73,58 @@
 
          FROM WEEK 2, once ArcGIS Online is live: publish your web map,
          choose Share → Embed, delete the <img> line, remove the <!-- and
-         -- around the iframe, and paste your address in.
+          around the iframe, and paste your address in.
          ============================================================ --> 
     <figure>
-      <img src="66EB6EDE-6EE4-4CA0-8044-B9191E2D09C8.png" alt="This is a screenshot of the land cover in the Lyari Town neighborhood.">
-      <!--
-      <iframe src="PASTE-YOUR-EMBED-URL-HERE"
-              title="Describe your map" loading="lazy"></iframe>
-      -->
+     
+      <iframe width="700" height="600" allow="local-network-access; geolocation" title="Tutorial 2 · Terrain · Zain Siddiqui" src="https://nyuds.maps.arcgis.com/apps/mapviewer/index.html?configurableview=true&webmap=38ddaf31174c4605adb3cca8369a8d04&theme=light&bookmarks=true&heading=true&legend=true&share=true&scroll=false&basemaps=true&center=66.99681376945,24.865481512212504&scale=36111.909643" ></iframe>
+        
+<figure>
+      <img src="5D3A92AE-AF29-420F-B95F-E1B1D4983DEA.png" alt="This is a chart showing the mean monthly temperatures in Karachi from 1981-2010.">
+
+     <figure>
+      <img src="728B49B1-8A1C-4DED-901F-DEB90AA5FDAD_1_201_a.jpeg" alt="This is a chart showing the mean monthly precipitation in Karachi from 1981-2010.">
+
+     
       <figcaption>
-        This shows the Lyari neighborhood, which is contained by the river above,
-        a highway to the left, and roadways around the rest. Notice the immense 
-        amount of built-up land in this area and the size of the river currently.
+        This shows the climate normals of the world from 1981-2010. The data is taken 
+        from the weather station at Jinnah International Airport. The precipitation is 
+        measured in mm and temperature in Degrees Celcius. Notice how the months with 
+        the highest precipitation also match up with the warmest months.
       </figcaption>
     </figure>
 
     <h2>What I found</h2>
     <p>
-      This map supports the idea that this neighborhood no longer has water diffusion
-      methods for when the river overflows. The density of the urban space makes it 
-      difficult for both floodwater and rainwater to properly drain. The proximity of
-      the neighborhood with the river makes this a very pressing issue for residents.
+     1. It is warmest in the sahara desert and middle east reigon. That is one of the dry belts.
+     There are wet belts in the Chinese subcontinent, Oceania, as well as the Carribean to the 
+     Amazon rainforest. <br>
+     2. The reigonal pattern is quite similar with a majority of readings appearing
+     dark red, then orange, and one or two in the yellow. These are spread out geographically.<br>
+     3. Rain falls during the hot season. This can tell us that Karachi sits in a BWh or Hot 
+     Desert climate. In the summer it expereinces a monsoon season, typically right after 
+     the hottest time of the year.<br>
+     4. Karachi is the odd one out with the rest of the major cities in Pakistan having a consistently
+     humid climate. Northern cities recieve consistent rainfall which is in direct opposition to Karachi's 
+     exclusively rainy summer. Since its on the coast, it recieves monsoons that build over the Indian
+     subcontinent each summer. The rest of the year, Karachi is extremely dry, a factor that makes the city 
+     even less able to deal with heavy monsoon rains due to dried out ground which struggles to absorb water.<br>
+     5. It's hard to view precipitation clearly on the map. The main story is average temperature, and the color
+     of points should not be mistaken for precipitation measures as well.<br>
+         
     </p>
 
     <h2>What this does not show</h2>
     <div class="limits">
       <p>
-        This image can not prove if there is an established drainage system that can
-        handle the demand. We must assume that without the aid of natural drainage,
-        current systems are overwhelmed by the water it needs to control. With a 
-        zoomed in view we can see the density of the neighborhood, but not how it
-        compares to the density of the city or how many green spaces there are in 
-        other areas. A one step zoom out could show us if other neighborhoods do have
-        natural drainage methods. 
+        This map does not show the specific weather patterns in the Lyari Town Neighborhood due to 
+        data collection occuring at the airport, which is slightly removed from the city. 
+        
       </p>
       <p>
-        <strong>AI use:</strong> AI-assisted for finding the neighborhood in Karachi, 
-        and research into historical maps using ChatGPT. I verified by confirming
-        the accuracy of historical maps and by finding this neighborhood on Google
-        Earth as well as online research into its boundaries.
+        <strong>AI use:</strong> AI-assisted for finding weather patterns across pakistan
+        and the larger reigon around it. I verified by visiting websites that contained 
+        metorological data. 
       </p>
     </div>
 
