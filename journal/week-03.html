@@ -42,25 +42,27 @@
 
     <h2>The question</h2>
     <p>
-      
+      What does the terrain of Lyari Town look like? More specifically what do 
+         slope patterns look like and what is their density? How will water be 
+           distributed during flooding events and rainfall?
     </p>
 
     <h2>The data</h2>
     <p>
-      The layer used is World Historical Climate - Monthly Averages for 
-      GHCN-D Stations for 1981 - 2010 published by Esri from NOAA NCEI 
-      data (GHCN-Daily v3.24, Menne et al. 2012). It was opened on September 10th. 
-      The layer can be accessed at this link: https://nyuds.maps.arcgis.com/home/item.html?id=ed59d3b4a8c44100914458dd722f054f&sublayer=0#overview
-
+     The elevation model used is Airbus_WorldDEM4Ortho_24m. The cell size is 24.74m,
+         used under the NYU ArcGIS Online organizational subscription. The LE90 is 4m,
+         data was collected from 12/1/2010 to 6/30/2014, and the original carbon density
+         at 5-15cm is 149 hg/m^3. The soil sample was accessed via an Esri republication 
+         of soilgrids prediction of soil organic carbon (mass divided by mass) of world soils 
+         with licence CC BY 4.0.
     </p>
 
     <h2>The method</h2>
     <p>
-     The location used was Jinnah International Airport, Karachi's airport 
-     which is the closest and only station near Lyari Town. To filter this station
-     the expressions used were: GHCN-D ID starts with PK and GHCN-D ID is PKM00041780.
-     I charted the average monthly temperatures as well as the average monthly precipitation. 
-     These values were aggregated from 1981-2010. 
+     I added multiple layers, including terrain, terrain - slope degrees, and terrain - slope
+         map. The major layer used is terrain - slope degrees with 9 classes, manual breaks, 
+          and 15% transparency. The area pictured is a closeup on the Lyari Town neighborhood
+         as well as the nearby Lyari river and surrounding neighborhoods. 
     </p>
 
     <!-- ============================================================
