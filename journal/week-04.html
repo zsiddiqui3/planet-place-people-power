@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Week 03 · Zain Siddiqui</title>
+
+<!-- Note the ../ — this page is inside the journal folder, so it has to
+     look one level up to find the stylesheet. -->
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Zain Siddiqui</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../index.html#journal">Journal</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<article class="entry">
+  <div class="wrap wrap-narrow">
+
+    <p class="kicker">Week 03 · September 2026</p>
+
+    <!-- EDIT THIS: a title that says what you found, not what you did.
+         "The blocks that were built after the creek was filled" beats
+         "Week 1 journal entry". -->
+    <h1>Terrain</h1>
+
+    <!-- ============================================================
+         The six parts. Every entry in this course has all six.
+         Do not delete a heading — if a section is thin, that is
+         information too.
+         ============================================================ -->
+
+    <h2>The question</h2>
+    <p>
+      What does the terrain of Lyari Town look like? More specifically what do 
+         slope patterns look like and what is their density? How will water be 
+           distributed during flooding events and rainfall?
+    </p>
+
+    <h2>The data</h2>
+    <p>
+     The elevation model used is Airbus_WorldDEM4Ortho_24m. The cell size is 24.74m,
+         used under the NYU ArcGIS Online organizational subscription. The LE90 is 4m,
+         data was collected from 12/1/2010 to 6/30/2014, and the original carbon density
+         at 5-15cm is 149 hg/m^3. The soil sample was accessed via an Esri republication 
+         of soilgrids prediction of soil organic carbon (mass divided by mass) of world soils 
+         with licence CC BY 4.0.
+    </p>
+
+    <h2>The method</h2>
+    <p>
+     I added multiple layers, including terrain, terrain - slope degrees, and terrain - slope
+         map. The major layer used is terrain - slope degrees with 9 classes, manual breaks, 
+          and 15% transparency. The area pictured is a closeup on the Lyari Town neighborhood
+         as well as the nearby Lyari river and surrounding neighborhoods. 
+    </p>
+
+    <!-- ============================================================
+         YOUR EVIDENCE
+
+         WEEK 1: a screenshot from the Site Scanner. Upload it into this
+         journal folder (Add file → Upload files) and change the src
+         below to your filename, for example src="scanner-01.png".
+
+         FROM WEEK 2, once ArcGIS Online is live: publish your web map,
+         choose Share → Embed, delete the <img> line, remove the <!-- and
+          around the iframe, and paste your address in.
+         ============================================================ --> 
+    <figure>
+     
+<iframe width="700" height="600" allow="local-network-access; geolocation" title="Tutorial 2 · Terrain · Zain Siddiqui" src="https://nyuds.maps.arcgis.com/apps/mapviewer/index.html?configurableview=true&webmap=38ddaf31174c4605adb3cca8369a8d04&theme=dark&heading=true&legend=true&share=true&scroll=false&basemaps=true&center=66.99232081789297,24.862805478128003&scale=36111.909643" ></iframe>        
+
+         <figure>
+      <img width="200" height="400" src="3CAF9E14-54DF-4DC0-B11D-BDF6C3312543_4_5005_c.jpeg" alt="This is the legend of the slope degrees at Lyari Town">
+          
+     <figure>
+      <img src="9AA59E1B-D18E-433C-AA11-A8ED16B393F3.png" alt="This is the classified map of the slope degrees at Lyari Town">
+          
+      <figure>
+      <img width="200" height="400" src="24F56E53-A9FF-4C62-9455-907DA832CF4A_4_5005_c.jpeg" width="200" alt="This is the legend of the stretched map at Lyari Town.">
+<figure>
+      <img src="BA65D0AD-842A-43F0-B6F3-BC21A6A981AE_1_105_c.jpeg" alt="This is a stretched map of the slope degrees at Lyari Town.">
+
+      <figcaption>
+        This shows the terrain of Lyari Town, Karachi via the Terrain - Slope Degrees
+      layer by ESRI. The first image is the terrain classified across 9 classses, from 
+           flat appearing yellow, to steep appearing red. The second image is the same 
+           layer, min-max stretched with a gamma of around 3.4. The cell size is 24.74m. 
+           
+      </figcaption>
+    </figure>
+
+    <h2>What I found</h2>
+    <p>
+Based on the slope map and a look at the terrain in the broader reigon around the city, 
+         water will flow directly towards the city due to the surrounding terrain being a 
+         large river catchment area. The town has certain areas with higher gradients, as
+         well as large flat areas.
+    </p>
+
+    <h2>What this does not show</h2>
+    <div class="limits">
+      <p>
+        The cell size of this map is 24.74m. What doesn't show is elevations that may be less
+           than 25m. Features that are between 25-50m appear as small, regardless of their impact
+           on the humans living in this area. 
+      </p>
+      <p>
+        <strong>AI use:</strong> No AI assistance was used. 
+      </p>
+    </div>
+
+    <a class="back" href="../index.html#journal">← Back to all entries</a>
+
+  </div>
+</article>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap wrap-narrow">
+    <p>Zain Siddiqui · SOCS-SHU 289 · NYU Shanghai · Fall 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
