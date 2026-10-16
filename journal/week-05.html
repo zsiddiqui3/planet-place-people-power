@@ -42,25 +42,29 @@
 
     <h2>The question</h2>
     <p>
-     At Lyari Town, Karachi, is the green on the NDVI map made of tree canopy,
-         or of scattered turf and weeds, judging by the pattern of
-         high pixels, the 30 m scale, and the density of vegetation within each pixel?
+         How do natural catchment boundaries, the proximity of water sources, and 
+         the adjacency of engineered water infrastructure to the natural catchment
+         area influence water movement to Lyari Town, Karachi, and to what extent
+         do they affect the connectivity of Lyari town to safe local water?
     </p>
 
     <h2>The data</h2>
     <p>
-         Landsat 8 OLI, 30 m cells, acquired 15 March 2026, 9% cloud cover, served 
-         through Esri's Landsat Explorer. The layer was used under the NYU ArcGIS
-         Online organizational subscription. The index is NDVI = (b5 − b4) / (b5 + b4), 
-         with Band 4 as red and Band 5 as near-infrared.
+           The layers used are MERIT-Hydro (2021), on the higher precision setting, with 
+         kilometers squared as the unit. This is used under license CC BY-NC 4.0 or Open 
+         Database license 1.0. The second layer is from WRI Aqueduct 4.0, license CC BY
+         4.0, baseline period 1979-2019, and april 2023 data vintage. 
+          
     </p>
 
     <h2>The method</h2>
     <p>
-         The layer used is ESRI Multispectral Landsat with the NDVI Colorized processing 
-         template. The threshhold set is 0.3 because of the lack of meaningful vegetation
-         at this location. It is a color map with breaks in color at every unit. An additional 
-         layer not pictured was added later: ESRI Sentinal-2 Views.   
+         The watershed was delineated using MERIT-Hydro (2021), which has a spatial
+         resolution of approximately 90 meters, with the application's higher-precision
+         setting. The unit is HydroBASINS Level 6 sub-basin expressed as a dimensionless
+         ratio of water withdrawals to available renewable water supply. The outlet coordinates
+         of my point at N24.876, E66.991 snap to N24.880, E66.995, which is roughly 250 meters away.
+         The ratio of the index's polygon to the site area is 754.16sqkm / 6 sqkm = 125.69. 
     </p>
 
     <!-- ============================================================
@@ -76,8 +80,13 @@
          ============================================================ --> 
     <figure>
      
-<iframe <iframe width="700" height="600" allow="local-network-access; geolocation" title="Tutorial 3 · Green · Zain Siddiqui_3" src="https://nyuds.maps.arcgis.com/apps/mapviewer/index.html?configurableview=true&webmap=2839588215f64ee5815abc66e2c41962&theme=dark&bookmarks=true&heading=true&legend=true&scroll=false&basemaps=true&center=66.98111037064699,24.866711315328818&scale=36111.909643" ></iframe>
+<iframe <iframe width="600" height="500" src="https://mghydro.com/app/shared/5C93A7" alt= "This shows the catchment area with area 510 sqkm of a point in Lyari Town, Karachi" ></iframe> 
          <figure>
+              
+     <iframe <iframe width="700" height="600" allow="local-network-access; geolocation" title="Tutorial 3 · Green · Zain Siddiqui_3" src="https://nyuds.maps.arcgis.com/apps/mapviewer/index.html?configurableview=true&webmap=2839588215f64ee5815abc66e2c41962&theme=dark&bookmarks=true&heading=true&legend=true&scroll=false&basemaps=true&center=66.98111037064699,24.866711315328818&scale=36111.909643" ></iframe>
+         <figure>
+
+              
       <img 
            src="E8703099-9775-4141-AA31-9400C90211DF.png" alt="This is a screenshot of the vegetation index in the Lyari Town neighborhood.">
 
@@ -123,3 +132,16 @@ NDVI of about 0.44 at the Lyari River bank does not show healthy riparian habita
 
 </body>
 </html>
+
+
+
+
+         Lyari town is apart of a large catchment area that begins many miles outside of 
+         Karachi and carrys water in between two ridge lines and along 6 tributaries 
+         that join into the Lyari river until finally draining to the bay and ocean. 
+         Water is carried into Lyari from the Hub Dam, which is outside and above of
+         the aforementioned catchment area. Water is carried into Karachi via canals 
+         and pipes, through pump facilities and finally to Lyari town through the 
+         main federal trunk and smaller pipes. It's worth noting that Lyari recieves 
+         13 million gallons per day (MGD) when its demand is actually 20 MGD. The area
+         relies heavily on bottled water and water tankers for their supply. 
