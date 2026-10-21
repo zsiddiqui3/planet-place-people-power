@@ -50,18 +50,13 @@ To what extent was the Lyari River built up in the 1980s and what distribution p
     <h2>The data</h2>
     <p>
             Sentinel-2 10m Land Use/Land Cover Time Series, Esri and Impact Observatory, 
-         10m, 2017-2023. Licensed under the Esri Master License Agreement; the source LULC data is CC BY 4.0.
+         10m, 2019-2023. Licensed under the Esri Master License Agreement; the source LULC data is CC BY 4.0.
     </p>
 
     <h2>The method</h2>
     <p>
-         The watershed was delineated using MERIT-Hydro (2021), which has a spatial
-         resolution of approximately 90 meters, with the application's higher-precision
-         setting. The unit is HydroBASINS Level 6 sub-basin expressed as a dimensionless
-         ratio of water withdrawals to available renewable water supply. The catchment area
-         was based on the coordinate N24.876, E66.991. The outlet of the catchment 
-         snap's to N24.880, E66.995, which is roughly 600 meters away.
-         The ratio of the index's polygon to the site area is 754.16sqkm / 6 sqkm = 125.69. 
+         The extent, scale, and rendering stayed constant at 1:1, scale 1px=1m, and 
+         rendering showing all layers. Viewers can recreate at this link: <a href="https://livingatlas.arcgis.com/landcoverexplorer/#mapCenter=66.99264%2C24.86493%2C13.95&mode=swipe&timeExtent=2022%2C2023" target="_blank">ESRI Land Cover Explorer</a>.
     </p>
 
     <!-- ============================================================
@@ -89,29 +84,29 @@ To what extent was the Lyari River built up in the 1980s and what distribution p
               
     <h2>What I found</h2>
     <p>
-     One thing at my site that crosses the boundary of the catchment area is the Hub Dam's
-     water movement infrastructure. It carries water through the catchment area into Karachi. 
-         It uses canals and pipes to carry water to treatment and pumping before being dispersed
-         through the city and finally to Lyari town through the main federal trunk and smaller pipes.
-         The high precision site had an area of 510 sqkm and the low precision had a 520 sqkm area, with similar shapes. 
-         Its worth noting that Lyari Town recieves 13 million gallons per day (MGD), which is below
-         their 20 MGD demand. The area actually relies heavily on bottled water and water tankers 
-         for their supply. This dam is outside and above the catchment area as water flows towards
-         Lyari and the ocean. It has open canals that cross the natural catchment area which can harm 
-         water purification. 
+         One change you can see from 2019-2023 is the amount of built land on top 
+         of the Lyari river. In 2019 the river is extremely built up, with built area
+         red completely covering the east and west sides of the northern-central bridge
+         as well as significant area of the river bank flowing towards the ocean after 
+         that bridge. In 2023 the built area over the bridge is significantly less, and 
+         built area on the river bank was significantly curbed. I suspect this building was 
+         informal settlements in the form of slums being built on the dried up river bed
+         during months with low rain. These settlements were most likely extremely effected 
+         by flooding during the rainy season, and were either abandoned due to this, or 
+         forcibly removed by city officials. 
     </p>
 
     <h2>What this does not show</h2>
     <div class="limits">
       <p>
-     I am using the delineated catchment boundary at Lyari Town to stand for where water naturally
-           drains around Lyari town, but this might fail because of manmade water management systems
-           originating from the Hub dam which transports water through the catchment area
-           that the elevation-based model cannot account for.
+     I am using the built area class in the ESRI Land Cover Explorer to stand for informal
+           settlement slums built within the banks of the Lyari River, which block the flow
+           of water, but this might fail because of green area classification by the explorer,
+           meaning built area within the river is actually green space, or because built areas
+           are actually settlements, but they were built sustainably as to not block river flow. 
       </p>
       <p>
-        <strong>AI use:</strong> AI assistance was used to find license and data info using ChatGPT. 
-           AI also assisted for tidying the HTML in the week-05 entry, using ChatGPT. 
+        <strong>AI use:</strong> AI assistance was used to insert links in HTML and find license and data info using ChatGPT. 
       </p>
     </div>
 
