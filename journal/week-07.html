@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Week 07 · Zain Siddiqui</title>
+
+<!-- Note the ../ — this page is inside the journal folder, so it has to
+     look one level up to find the stylesheet. -->
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Zain Siddiqui</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../index.html#journal">Journal</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<article class="entry">
+  <div class="wrap wrap-narrow">
+
+    <p class="kicker">Week 0 · October 2026</p>
+
+    <!-- EDIT THIS: a title that says what you found, not what you did.
+         "The blocks that were built after the creek was filled" beats
+         "Week 1 journal entry". -->
+    <h1>Historic Land Cover at Lyari Town </h1>
+
+    <!-- ============================================================
+         The six parts. Every entry in this course has all six.
+         Do not delete a heading — if a section is thin, that is
+         information too.
+         ============================================================ -->
+
+    <h2>The question</h2>
+    <p>
+To what extent was the Lyari River built up in the 1980s and what distribution patterns 
+         has this area followed in the change of the amount of settlements changed
+         over time?
+    </p>
+
+    <h2>The data</h2>
+    <p>
+            Sentinel-2 10m Land Use/Land Cover Time Series, Esri and Impact Observatory, 
+         10m, 2019-2023. Licensed under the Esri Master License Agreement; the source LULC data is CC BY 4.0.
+    </p>
+
+    <h2>The method</h2>
+    <p>
+         The extent, scale, and rendering stayed constant at 1:1, scale 1px=1m, and 
+         rendering showing all layers. Viewers can recreate at this link: <a href="https://livingatlas.arcgis.com/landcoverexplorer/#mapCenter=66.99264%2C24.86493%2C13.95&mode=swipe&timeExtent=2022%2C2023" target="_blank">ESRI Land Cover Explorer</a>.
+    </p>
+
+    <!-- ============================================================
+         YOUR EVIDENCE
+
+         WEEK 1: a screenshot from the Site Scanner. Upload it into this
+         journal folder (Add file → Upload files) and change the src
+         below to your filename, for example src="scanner-01.png".
+
+         FROM WEEK 2, once ArcGIS Online is live: publish your web map,
+         choose Share → Embed, delete the <img> line, remove the <!-- and
+          around the iframe, and paste your address in.
+         ============================================================ --> 
+ </figure>
+      <img 
+           src="5A842CAF-576B-4D1C-8193-1150BB8EC63A.png" 
+           alt="This is the change in land cover at Lyari Town from 2017-2023."
+         <figcaption>
+             This is the change in land cover at Lyari Town from 2017-2023, at a 
+          1px=10m, 1:37,795 size, sourced from the ESRI Land Cover Explorer. 
+      </figcaption>
+    </figure>
+
+       <a href="https://livingatlas.arcgis.com/landcoverexplorer/#mapCenter=66.99264%2C24.86493%2C13.95&mode=swipe&timeExtent=2022%2C2023" target="_blank">ESRI Land Cover Explorer</a>
+              
+    <h2>What I found</h2>
+    <p>
+         One change you can see from 2019-2023 is the amount of built land on top 
+         of the Lyari river. In 2019 the river is extremely built up, with built area
+         red completely covering the east and west sides of the northern-central bridge
+         as well as significant area of the river bank flowing towards the ocean after 
+         that bridge. In 2023 the built area over the bridge is significantly less, and 
+         built area on the river bank was significantly curbed. I suspect this building was 
+         informal settlements in the form of slums being built on the dried up river bed
+         during months with low rain. These settlements were most likely extremely effected 
+         by flooding during the rainy season, and were either abandoned due to this, or 
+         forcibly removed by city officials. 
+    </p>
+
+    <h2>What this does not show</h2>
+    <div class="limits">
+      <p>
+     I am using the built area class in the ESRI Land Cover Explorer to stand for informal
+           settlement slums built within the banks of the Lyari River, which block the flow
+           of water, but this might fail because of green area classification by the explorer,
+           meaning built area within the river is actually green space, or because built areas
+           are actually settlements, but they were built sustainably as to not block river flow. 
+      </p>
+      <p>
+        <strong>AI use:</strong> AI assistance was used to insert links in HTML and find license and data info using ChatGPT. 
+      </p>
+    </div>
+
+    <a class="back" href="../index.html#journal">← Back to all entries</a>
+
+  </div>
+</article>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap wrap-narrow">
+    <p>Zain Siddiqui · SOCS-SHU 289 · NYU Shanghai · Fall 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
