@@ -62,7 +62,14 @@ distributed around the world, and at what scale do Pakistan's top exports rely o
 
     <h2>The method</h2>
     <p>
-          
+          The join was made on the Natural Earth "Admin" field and the Atlas "Exports" field. 
+         I used left join because it preserved every country poluygon, whether or not there was
+         a match, and because of issues
+         joining the layers while using the inner join method. 38 rows failed to find
+         polygons and 20 did not match across the join due to no row in the exports table. 156
+         rows matched. The largest failure was Turkey, which had an export value of $351 Million, 
+         due to a mismatched spelling with Turkiye. Singapore doesn't exist in the boundary file
+         due to its physical size, and is another large failure. 
     </p>
 
     <!-- ============================================================
@@ -80,26 +87,21 @@ distributed around the world, and at what scale do Pakistan's top exports rely o
 <iframe width="700" height="600" allow="local-network-access; geolocation" 
      title="Pakistan Exports the most to the USA, followed by China, the UK, Germany, and more. " src="https://nyuds.maps.arcgis.com/apps/mapviewer/index.html?configurableview=true&webmap=9c1e699126554296adbf80aacc310590&theme=dark&bookmarks=true&heading=true&legend=true&scroll=false&basemaps=true&center=154.25442253674927,48.08741377485041&scale=295828763.795777" ></iframe>         
          <figcaption>
-        This map shows the locations and scale of where Pakistan's exports go, 
-              and were they originate from. This data is from 2024, and found using
-              the Atlas of Economic Complexity from The Growth Lab at Harvard University 
-              joined with the Natural Earth Admin - 0. 
+        This map shows the locations and scale of where Pakistan's exports go, tracked in 
+              USD, and were the largest category originates from. This data is from 2024,
+              and found using the Atlas of Economic Complexity from The Growth Lab at 
+              Harvard University joined with the Natural Earth Boundaries Admin - 0. 
          </figcaption>         
          <figure>
 
               
     <h2>What I found</h2>
     <p>
-     One thing at my site that crosses the boundary of the catchment area is the Hub Dam's
-     water movement infrastructure. It carries water through the catchment area into Karachi. 
-         It uses canals and pipes to carry water to treatment and pumping before being dispersed
-         through the city and finally to Lyari town through the main federal trunk and smaller pipes.
-         The high precision site had an area of 510 sqkm and the low precision had a 520 sqkm area, with similar shapes. 
-         Its worth noting that Lyari Town recieves 13 million gallons per day (MGD), which is below
-         their 20 MGD demand. The area actually relies heavily on bottled water and water tankers 
-         for their supply. This dam is outside and above the catchment area as water flows towards
-         Lyari and the ocean. It has open canals that cross the natural catchment area which can harm 
-         water purification. 
+         The physical connections holds for the largest individual physical export, but
+         when business services are included, the physical resources of the country do not
+         have an effect. The second largest individual export in USD is House Linens,
+         which do come from the ground, in the form of cotton, whose growing area covers
+         about 2.5% of the land in Pakistan. Business 
     </p>
 
     <h2>What this does not show</h2>
