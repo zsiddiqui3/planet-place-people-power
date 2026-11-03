@@ -64,12 +64,12 @@ distributed around the world, and at what scale do Pakistan's top exports rely o
     <p>
           The join was made on the Natural Earth "Admin" field and the Atlas "Exports" field. 
          I used left join because it preserved every country poluygon, whether or not there was
-         a match, and because of issues
-         joining the layers while using the inner join method. 38 rows failed to find
-         polygons and 20 did not match across the join due to no row in the exports table. 156
-         rows matched. The largest failure was Turkey, which had an export value of $351 Million, 
-         due to a mismatched spelling with Turkiye. Singapore doesn't exist in the boundary file
-         due to its physical size, and is another large failure. 
+         a match, and because of issues joining the layers while using the inner join method. 
+         38 rows failed to find polygons and 20 did not match across the join due to no row
+         in the exports table. 156 rows matched. The largest failure was Turkey, which had
+         an export value of $351 Million, due to a mismatched spelling with Turkiye. 
+         Singapore doesn't exist in the boundary file due to its physical size, and is
+         another large failure. 
     </p>
 
     <!-- ============================================================
@@ -99,22 +99,24 @@ distributed around the world, and at what scale do Pakistan's top exports rely o
     <p>
          The physical connections holds for the largest individual physical export, but
          when business services are included, the physical resources of the country do not
-         have an effect. The second largest individual export in USD is House Linens,
+         have an effect. The second largest individual export in USD is House Linens at $4.32B,
          which do come from the ground, in the form of cotton, whose growing area covers
-         about 2.5% of the land in Pakistan. Business 
+         about 2.5% of the land in Pakistan. Business services has a value of $6.00B and
+         is centered around IT service's in major urban areas. Highlighted on the map is two
+         major centers in Lahore, and where submarine data cables enter Pakistan which is 
+         near Karachi. 
     </p>
 
     <h2>What this does not show</h2>
     <div class="limits">
       <p>
-     I am using the delineated catchment boundary at Lyari Town to stand for where water naturally
-           drains around Lyari town, but this might fail because of manmade water management systems
-           originating from the Hub dam which transports water through the catchment area
-           that the elevation-based model cannot account for.
+    I'm using Lahori IT service hotbeds to stand for business services in the country as a whole,
+           and it might fail because services could be more widespread around the country or leave
+           from other locations around the country. 
       </p>
       <p>
-        <strong>AI use:</strong> AI assistance was used to find license and data info using ChatGPT. 
-           AI also assisted for tidying the HTML in the week-05 entry, using ChatGPT. 
+        <strong>AI use:</strong> AI assistance was used to find business service and textile
+           information data using ChatGPT. 
       </p>
     </div>
 
