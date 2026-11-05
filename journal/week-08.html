@@ -73,13 +73,33 @@
 
     <h2>The method</h2>
     <p>
-         The watershed was delineated using MERIT-Hydro (2021), which has a spatial
-         resolution of approximately 90 meters, with the application's higher-precision
-         setting. The unit is HydroBASINS Level 6 sub-basin expressed as a dimensionless
-         ratio of water withdrawals to available renewable water supply. The catchment area
-         was based on the coordinate N24.876, E66.991. The outlet of the catchment 
-         snap's to N24.880, E66.995, which is roughly 600 meters away.
-         The ratio of the index's polygon to the site area is 754.16sqkm / 6 sqkm = 125.69. 
+<strong>Telecom query:</strong></p>
+<pre><code>[out:json][timeout:60];
+nwr["telecom"]({{bbox}});
+out center;</code></pre>
+
+<p>
+<strong>Predicate:</strong> <code>["telecom"]</code> — searches for all OpenStreetMap objects carrying a telecom tag.
+<strong>Extent:</strong> <code>{{bbox}}</code> — the visible map area covering Karachi.
+</p>
+
+<p><strong>Power query:</strong></p>
+<pre><code>[out:json][timeout:60];
+(
+  nwr["power"="substation"]({{bbox}});
+  nwr["power"="tower"]({{bbox}});
+);
+out center;</code></pre>
+
+<p>
+<strong>Predicate:</strong> Searches for power substations and power towers.
+<strong>Extent:</strong> <code>{{bbox}}</code> — the visible map area covering Karachi.
+</p>
+
+<p>
+<strong>Server:</strong> [https://overpass-api.de/api/]
+<br>
+<strong>Retrieval date:</strong> 5 November 2026. 
     </p>
 
     <!-- ============================================================
